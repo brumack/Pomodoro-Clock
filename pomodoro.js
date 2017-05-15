@@ -3,20 +3,40 @@ $(document).ready(function() {
   var seshBreak = 5;
   var min = session;
   var running = false;
+  var onbreak = false;
 
   $('#min').html(session);
+  $('#sec').html('00');
   $('#sessionTime p').html(session);
   $('#breakTime p').html(seshBreak);
 
   $('#sessionTimeLeft').click(function() {
-    if (session > 0)
-    session--;
+    if (session > 1)
+      session--;
     $('#sessionTime p').html(session);
+    if (running === false) {
+      $('#min').html(session);
+      sec = 0;
+      min = session;
+      $('#sec').html('00');
+      $('#min').html(session);
+      $('#startStop p').html('Start');
+    }
+    return session;
   });
 
   $('#sessionTimeRight').click(function() {
     session++;
     $('#sessionTime p').html(session);
+    if (running === false) {
+      $('#min').html(session);
+      sec = 0;
+      min = session;
+      $('#sec').html('00');
+      $('#min').html(session);
+      $('#startStop p').html('Start');
+    }
+    return session;
   });
 
   $('#breakTimeLeft').click(function() {
@@ -31,7 +51,7 @@ $(document).ready(function() {
   });
 
   $('#reset').click(function(){
-    sec = 60;
+    sec = 0;
     min = session;
     $('#sec').html('00');
     $('#min').html(session);
@@ -54,8 +74,18 @@ $(document).ready(function() {
 
   function increment () {
     if (min == 0 && sec == 0) {
-      running = false;
-      $('#startStop p').html('Start');
+      if (onbreak == false) {
+        onbreak = true;
+        min = seshBreak;
+        $('#min').html(min);
+        $('#sec').html('00');
+      }
+      else {
+        onbreak = false;
+        min = session;
+        $('#min').html(min);
+        $('#sec').html('00');
+      }
     }
     if (running === true) {
       if (sec > 0) {

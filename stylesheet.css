@@ -1,7 +1,7 @@
 .container-fluid: {
   padding:0;
   margin:0;
-  color:white;
+  color:black;
 }
 
 .row {
@@ -17,13 +17,31 @@
 #sessionTimeLeft {
   width:10vh;
   height:10vh;
-  background-color:blue;
+  background-color:#b8d2f9;
   border-radius:50%;
   position:relative;
     top:22.5vh;
     left:8vh;
   z-index:3;
-  color:white;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+  opacity:.8;
+}
+
+#sessionTimeLeft:hover {
+  opacity:1;
+}
+
+#sessionTimeLeft:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8.5vh;
+  height: 8.5vh;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
 }
 
 #sessionTimeLeft p {
@@ -36,26 +54,72 @@
   width:25vh;
   height:25vh;
   border-radius:50%;
-  background:orange;
+  background:#5995f7;
   position:relative;
     top:5vh;
     left:20vh;
   z-index:2;
   font-size:8vh;
   text-align:center;
+  opacity:.8;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+}
+
+#sessionTime:before {
+  /* adds the white highlight on the top left of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12.5vh;
+  height: 12.5vh;
+  top: 15px;
+  left: 15px;
+  border-radius: 150px 50px;
+  box-shadow: inset 10px 10px 50px rgba(255, 255, 255, 0.6);
+}
+
+#sessionTime:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 21.25vh;
+  height: 21.25vh;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.04);
 }
 
 #sessionTimeRight {
   width:10vh;
   height:10vh;
-  background-color:blue;
+  background-color:#b8d2f9;
   border-radius:50%;
   position:relative;
   left:32vh;
   bottom:12.30vh;
   z-index:4;
-  color:white;
   font-size:8vh;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+  opacity:.8;
+}
+
+#sessionTimeRight:hover {
+  opacity:1;
+}
+
+#sessionTimeRight:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8.5vh;
+  height: 8.5vh;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
 }
 
 #sessionTimeRight p {
@@ -66,15 +130,35 @@
 #breakTimeLeft {
   width:10vh;
   height:10vh;
-  background-color:blue;
+  background-color:#b8d2f9;
   border-radius:50%;
   position:relative;
     bottom:55vh;
     left: 8vh;
   z-index:3;
-  color:white;
   font-size:8vh;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+  opacity:.8;
 }
+
+#breakTimeLeft:hover {
+  opacity:1;
+}
+
+#BreakTimeLeft:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8.5vh;
+  height: 8.5vh;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
+}
+
+
 
 #breakTimeLeft p {
   position:relative;
@@ -85,11 +169,27 @@
   width:25vh;
   height:25vh;
   border-radius:50%;
-  background:orange;
+  background:lightgray;
   position:relative;
     bottom:73vh;
     left:20vh;
   font-size:8vh;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+  opacity:.8;
+}
+
+
+#breakTime:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 21.25vh;
+  height: 21.25vh;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
 }
 
 p {
@@ -100,13 +200,31 @@ p {
 #breakTimeRight {
   width:10vh;
   height:10vh;
-  background-color:blue;
+  background-color:#b8d2f9;
   border-radius:50%;
   position: relative;
     left:32vh;
     bottom:90vh;
-  color:white;
   font-size:8vh;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+  opacity:.8;
+}
+
+#breakTimeRight:hover {
+  opacity:1;
+}
+
+#breakTimeRight:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8.5vh;
+  height: 8.5vh;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
 }
 
 #breakTimeRight p {
@@ -118,13 +236,54 @@ p {
   height:50vh;
   width:50vh;
   border-radius:50%;
+  background:lightblue;
+  text-align:center;
+  position:relative;
+    bottom:45vh;
+  font-size:13vh;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 30px rgba(0, 0, 0, 0.5), inset 0px 0px 75px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+}
+
+#screen:before {
+  /* adds the white highlight on the top left of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25vh;
+  height: 25vh;
+  top: 15px;
+  left: 15px;
+  border-radius: 150px 50px;
+  box-shadow: inset 10px 10px 50px rgba(255, 255, 255, 0.6);
+}
+
+#screen:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 42.5vh;
+  height: 42.5vh;
+  border-radius: 170px;
+  left: 30px;
+  top: 30px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+/*#screen {
+  height:50vh;
+  width:50vh;
+  border-radius:50%;
   background:lightgray;
   color:black;
   text-align:center;
   position:relative;
     bottom:45vh;
   font-size:13vh;
-}
+}*/
 
 #screen p {
   position:relative;
@@ -135,36 +294,88 @@ p {
   width:25vh;
   height:25vh;
   border-radius:50%;
-  background:blue;
+  background:#8bb3f4;
   position:relative;
     right:30vh;
     bottom:8vh;
   z-index:4;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+  opacity:.8;
+}
+
+#startStop:hover {
+  opacity:1;
+}
+
+#startStop:before {
+  /* adds the white highlight on the top left of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12.5vh;
+  height: 12.5vh;
+  top: 15px;
+  left: 15px;
+  border-radius: 150px 50px;
+  box-shadow: inset 10px 10px 50px rgba(255, 255, 255, 0.6);
+}
+
+.bubble:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 21.25vh;
+  height: 21.25vh;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
 }
 
 #startStop p {
   font-size:6vh;
   position:relative;
     top:8vh;
-  color:white;
+  opacity:1;
 }
 
 #reset {
   width:20vh;
   height:20vh;
   border-radius:50%;
-  background:orange;
+  background:#a3b4d1;
   position:relative;
     right:22vh;
     bottom:108vh;
   z-index:3;
+  opacity:.8;
+  box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
+
+}
+
+#reset:after {
+  /* adds the darker lowlight on the bottom of the bubble */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70vh;
+  height: 70vhpx;
+  border-radius: 170px;
+  left: 15px;
+  top: 15px;
+  box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
 }
 
 #reset p {
-  font-size:6vh;
+  font-size:5vh;
   position:relative;
-    top:5vh;
-  color:white;
+    top:6Svh;
+  opacity:1;
+}
+
+#reset:hover {
+  opacity:1;
 }
 
  p {

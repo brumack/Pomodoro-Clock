@@ -1,26 +1,51 @@
 $(document).ready(function() {
-  var session = 1;
+  var session = 25;
   var seshBreak = 5;
   var min = session;
   var running = false;
 
   $('#min').html(session);
+  $('#sessionTime p').html(session);
+  $('#breakTime p').html(seshBreak);
+
+  $('#sessionTimeLeft').click(function() {
+    if (session > 0)
+    session--;
+    $('#sessionTime p').html(session);
+  });
+
+  $('#sessionTimeRight').click(function() {
+    session++;
+    $('#sessionTime p').html(session);
+  });
+
+  $('#breakTimeLeft').click(function() {
+    if (seshBreak > 0)
+      seshBreak--;
+    $('#breakTime p').html(seshBreak);
+  });
+
+  $('#breakTimeRight').click(function() {
+    seshBreak++;
+    $('#breakTime p').html(seshBreak);
+  });
 
   $('#reset').click(function(){
     sec = 60;
     min = session;
     $('#sec').html('00');
     $('#min').html(session);
+    $('#startStop p').html('Start');
     running = false;
   })
 
   $('#startStop').click(function() {
     if (running) {
       running = false;
-      $('#startStop').html('Start');
+      $('#startStop p').html('Start');
     }
     else {
-      $('#startStop').html('Stop');
+      $('#startStop p').html('Stop');
       running = true;
     }
   })
@@ -30,7 +55,7 @@ $(document).ready(function() {
   function increment () {
     if (min == 0 && sec == 0) {
       running = false;
-      $('#startStop').html('Start');
+      $('#startStop p').html('Start');
     }
     if (running === true) {
       if (sec > 0) {

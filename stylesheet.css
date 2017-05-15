@@ -139,7 +139,7 @@ p {
   position:relative;
     right:30vh;
     bottom:8vh;
-  z-index:3;
+  z-index:4;
 }
 
 #startStop p {
@@ -148,3 +148,25 @@ p {
     top:8vh;
   color:white;
 }
+
+#reset {
+  width:20vh;
+  height:20vh;
+  border-radius:50%;
+  background:orange;
+  position:relative;
+    right:22vh;
+    bottom:108vh;
+  z-index:3;
+}
+
+#reset p {
+  font-size:6vh;
+  position:relative;
+    top:5vh;
+  color:white;
+}
+
+ p {
+   user-select:none;
+ }

@@ -1,0 +1,150 @@
+.container-fluid: {
+  padding:0;
+  margin:0;
+  color:white;
+}
+
+.row {
+  height:100vh;
+}
+
+.element {
+  display: block;
+  margin: 0 auto;
+  text-align:center;
+}
+
+#sessionTimeLeft {
+  width:10vh;
+  height:10vh;
+  background-color:blue;
+  border-radius:50%;
+  position:relative;
+    top:22.5vh;
+    left:8vh;
+  z-index:3;
+  color:white;
+}
+
+#sessionTimeLeft p {
+  position:relative;
+    top:-1.25vh;
+  font-size:8vh;
+}
+
+#sessionTime {
+  width:25vh;
+  height:25vh;
+  border-radius:50%;
+  background:orange;
+  position:relative;
+    top:5vh;
+    left:20vh;
+  z-index:2;
+  font-size:8vh;
+  text-align:center;
+}
+
+#sessionTimeRight {
+  width:10vh;
+  height:10vh;
+  background-color:blue;
+  border-radius:50%;
+  position:relative;
+  left:32vh;
+  bottom:12.30vh;
+  z-index:4;
+  color:white;
+  font-size:8vh;
+}
+
+#sessionTimeRight p {
+  position:relative;
+    top:-1.25vh;
+}
+
+#breakTimeLeft {
+  width:10vh;
+  height:10vh;
+  background-color:blue;
+  border-radius:50%;
+  position:relative;
+    bottom:55vh;
+    left: 8vh;
+  z-index:3;
+  color:white;
+  font-size:8vh;
+}
+
+#breakTimeLeft p {
+  position:relative;
+    top:-1.5vh;
+}
+
+#breakTime {
+  width:25vh;
+  height:25vh;
+  border-radius:50%;
+  background:orange;
+  position:relative;
+    bottom:73vh;
+    left:20vh;
+  font-size:8vh;
+}
+
+p {
+  position:relative;
+  top:6.5vh;
+}
+
+#breakTimeRight {
+  width:10vh;
+  height:10vh;
+  background-color:blue;
+  border-radius:50%;
+  position: relative;
+    left:32vh;
+    bottom:90vh;
+  color:white;
+  font-size:8vh;
+}
+
+#breakTimeRight p {
+  position:relative;
+    top:-1.5vh;
+}
+
+#screen {
+  height:50vh;
+  width:50vh;
+  border-radius:50%;
+  background:lightgray;
+  color:black;
+  text-align:center;
+  position:relative;
+    bottom:45vh;
+  font-size:13vh;
+}
+
+#screen p {
+  position:relative;
+  top:14vh;
+}
+
+#startStop {
+  width:25vh;
+  height:25vh;
+  border-radius:50%;
+  background:blue;
+  position:relative;
+    right:30vh;
+    bottom:8vh;
+  z-index:3;
+}
+
+#startStop p {
+  font-size:6vh;
+  position:relative;
+    top:8vh;
+  color:white;
+}

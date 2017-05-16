@@ -1,3 +1,12 @@
+H1 {
+  text-align:center;
+  font-family:'Oxygen';
+  font-weight:bold;
+  font-size:10vh;
+  margin:0;
+  padding:0;
+}
+
 .container-fluid: {
   padding:0;
   margin:0;
@@ -5,7 +14,7 @@
 }
 
 .row {
-  height:100vh;
+  height:70vh;
 }
 
 .element {
@@ -20,7 +29,7 @@
   background-color:rgba(184,210,249,.8);
   border-radius:50%;
   position:relative;
-    top:22.5vh;
+    top:17.5vh;
     left:8vh;
   z-index:3;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
@@ -32,7 +41,6 @@
 }
 
 #sessionTimeLeft:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -46,7 +54,7 @@
 
 #sessionTimeLeft p {
   position:relative;
-    top:-1.25vh;
+    top:-1.5vh;
   font-size:8vh;
 }
 
@@ -56,7 +64,7 @@
   border-radius:50%;
   background:rgba(89, 149, 247, .8);
   position:relative;
-    top:5vh;
+    top:0vh;
     left:20vh;
   z-index:2;
   font-size:8vh;
@@ -64,8 +72,8 @@
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
 }
 
+
 #sessionTime:before {
-  /* adds the white highlight on the top left of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -78,7 +86,6 @@
 }
 
 #sessionTime:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -97,7 +104,7 @@
   border-radius:50%;
   position:relative;
   left:32vh;
-  bottom:12.30vh;
+  bottom:16.8vh;
   z-index:4;
   font-size:8vh;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
@@ -108,7 +115,6 @@
 }
 
 #sessionTimeRight:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -122,7 +128,7 @@
 
 #sessionTimeRight p {
   position:relative;
-    top:-1.25vh;
+    top:-1.5vh;
 }
 
 #breakTimeLeft {
@@ -131,7 +137,7 @@
   background-color:rgba(184, 210, 249, .8);
   border-radius:50%;
   position:relative;
-    bottom:55vh;
+    bottom:60vh;
     left: 8vh;
   z-index:3;
   font-size:8vh;
@@ -144,7 +150,6 @@
 }
 
 #BreakTimeLeft:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -169,7 +174,7 @@
   border-radius:50%;
   background:rgba(211,211,211,.8);
   position:relative;
-    bottom:73vh;
+    bottom:78vh;
     left:20vh;
   font-size:8vh;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
@@ -177,7 +182,6 @@
 
 
 #breakTime:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -201,7 +205,7 @@ p {
   border-radius:50%;
   position: relative;
     left:32vh;
-    bottom:90vh;
+    bottom:94.5vh;
   font-size:8vh;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
   opacity:.8;
@@ -212,7 +216,6 @@ p {
 }
 
 #breakTimeRight:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -236,13 +239,12 @@ p {
   background:rgba(173,216,230, .8);
   text-align:center;
   position:relative;
-    bottom:45vh;
+    bottom:50vh;
   font-size:13vh;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 30px rgba(0, 0, 0, 0.5), inset 0px 0px 75px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
 }
 
 #screen:before {
-  /* adds the white highlight on the top left of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -255,7 +257,6 @@ p {
 }
 
 #screen:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -279,7 +280,7 @@ p {
   background:rgba(139, 179, 244, .8);
   position:relative;
     right:30vh;
-    bottom:8vh;
+    bottom:13vh;
   z-index:4;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
 }
@@ -289,7 +290,6 @@ p {
 }
 
 #startStop:before {
-  /* adds the white highlight on the top left of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -302,7 +302,6 @@ p {
 }
 
 #startStop:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -328,14 +327,13 @@ p {
   background:rgba(163, 180, 209, .8);
   position:relative;
     right:22vh;
-    bottom:108vh;
+    bottom:113vh;
   z-index:3;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
 
 }
 
 #reset:after {
-  /* adds the darker lowlight on the bottom of the bubble */
   content: "";
   display: block;
   position: absolute;
@@ -350,7 +348,7 @@ p {
 #reset p {
   font-size:5vh;
   position:relative;
-    top:6Svh;
+    top:6vh;
   opacity:1;
 }
 

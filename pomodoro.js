@@ -77,8 +77,10 @@ $(document).ready(function() {
             }
 
   function increment () {
-    if (min == 0 && sec == 0) {
+    if (min == 0 && sec == 1) 
       playSound();
+
+    if (min == 0 && sec == 0) {
       if (onbreak == false) {
         onbreak = true;
         min = seshBreak;

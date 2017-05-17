@@ -1,3 +1,13 @@
+.container-fluid: {
+  padding:0;
+  margin:0;
+  color:black;
+}
+
+.row {
+  height:70vh;
+}
+
 H1 {
   text-align:center;
   font-family:'Lobster';
@@ -8,22 +18,12 @@ H1 {
   user-select:none;
 }
 
-p {
-  position:relative;
-  top:6.5vh;
+div h2 {
+  font-family:'Lobster';
+  font-size:4vh;
+  position: relative;
+  z-index:3;
   user-select:none;
-  font-family:'Oxygen';
-  font-weight:bold;
-}
-
-.container-fluid: {
-  padding:0;
-  margin:0;
-  color:black;
-}
-
-.row {
-  height:70vh;
 }
 
 .element {
@@ -54,7 +54,7 @@ p {
   box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.05);
 }
 
-.smallCircle:hover {
+.smallCircle:hover{
   background-color:rgba(184, 210, 249, 1);
 }
 
@@ -62,6 +62,8 @@ p {
   position:relative;
     top:-1.5vh;
   font-size:8vh;
+  user-select:none;
+
 }
 
 .mediumCircle {
@@ -101,7 +103,9 @@ p {
 .mediumCircle p {
   position:relative;
   opacity:1;
-  top:6.5vh;
+  font-weight:bold;
+  user-select:none;
+
 }
 
 #sessionTimeLeft {
@@ -134,6 +138,25 @@ p {
   z-index:2;
 }
 
+#sessionTime p {
+  position:relative;
+  top:6.8vh;
+  right:0vh;
+  user-select:none;
+
+}
+
+#sessionTime p::before {
+  content: "Session";
+  text-align:center;
+  font-family:'Lobster';
+  font-size:4vh;
+  position:absolute;
+  bottom:9vh;
+  left:6.5vh;
+
+}
+
 #breakTime {
   background:rgba(211,211,211,.8);
   bottom:78vh;
@@ -141,8 +164,28 @@ p {
   font-size:8vh;
 }
 
+#breakTime p {
+  position:relative;
+  top:7.4vh;
+  right:0vh;
+  user-select:none;
+
+}
+
+#breakTime p::before {
+  content: "Break";
+  text-align:center;
+  font-family:'Lobster';
+  font-size:4vh;
+  position:absolute;
+  bottom:9vh;
+  left:7.75vh;
+
+}
+
 #startStop {
   background:rgba(139, 179, 244, .8);
+  font-family:'Lobster';
   right:30vh;
   bottom:13vh;
   z-index:4;
@@ -187,6 +230,8 @@ p {
 #screen p {
   position:relative;
   top:14vh;
+  user-select:none;
+
 }
 
 #startStop:hover {
@@ -198,6 +243,8 @@ p {
     top:8vh;
   opacity:1;
   font-size:6vh;
+  user-select:none;
+
 }
 
 #reset {
@@ -210,7 +257,7 @@ p {
     bottom:113vh;
   z-index:3;
   box-shadow: inset 30px 30px 75px rgba(0, 0, 0, 0.1), inset 0px 0px 15px rgba(0, 0, 0, 0.5), inset 0px 0px 55px rgba(255, 255, 255, 0.5), inset 3px 3px 5px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 255, 255, 0.75);
-
+  user-select:none;
 }
 
 #reset:after {
@@ -230,8 +277,20 @@ p {
   position:relative;
     top:6vh;
   opacity:1;
+  font-family:'Lobster';
+  user-select:none;
 }
 
 #reset:hover {
   background:rgba(163, 180, 209, 1);
+}
+
+#sessionLabel {
+  Bottom:175.5vh;
+  Left:20vh;
+}
+
+#breakLabel {
+  Bottom:143.7vh;
+  Left:20vh;
 }

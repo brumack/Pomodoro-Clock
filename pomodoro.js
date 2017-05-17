@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
 
   $('#breakTimeLeft').click(function() {
-    if (seshBreak > 0)
+    if (seshBreak > 1)
       seshBreak--;
     $('#breakTime p').html(seshBreak);
   });
@@ -72,8 +72,13 @@ $(document).ready(function() {
 
   var timer = setInterval(increment, 1000);
 
+  function playSound(){
+                document.getElementById("sound").innerHTML='<audio autoplay="autoplay"><source src="Alarm.mp3" type="audio/mpeg" /><embed hidden="true" autostart="true" loop="false" src="Alarm.mp3" /></audio>';
+            }
+
   function increment () {
     if (min == 0 && sec == 0) {
+      playSound();
       if (onbreak == false) {
         onbreak = true;
         min = seshBreak;
